@@ -1,0 +1,42 @@
+<script src="https://use.fontawesome.com/2a91b8cead.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" class="glyphicon glyphicon-menu-hamburger" id="openNav"></span>
+<link rel="stylesheet" href="main.css">
+
+<nav id="mySidenav" class="sidenav">
+	<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="#mainSection" onclick="goTab1()">Home</a>
+	<a href="#aboutSection" onclick="goTab2()">About</a>
+	<a href="#contactSection" onclick="goTab3()">Contact</a>
+</nav>
+
+<section id="mainSection" data-role="page" class="active">
+	<h1 id="homeTitle">  Home  </h1>
+	<blockquote>
+		<p>When was the last time you tried something for the first time?</p>
+		<footer>Someone important from <cite title="Source Title">Tumblr</cite></footer>
+	</blockquote>
+	<p class="lead">This app displays a side hamburger style navigation that slides in and out on click. In addition, this application uses transform: translate3d( ) to move all the sections out of the visible display by default, and then bringing the current one to view when selected</p>
+</section>
+
+<section id="aboutSection" data-role="page" class="inactive">
+	<h2 id="aboutTitle">  About Me </h2>
+	<div id="imgBox"><img src="https://pbs.twimg.com/profile_images/779894144311459841/J-vf1ZTG.jpg" alt="" /></div>
+
+	<h4 class="lead">Second Year Algonquin College Student Currently Enrolled In The Mobile Application Development & Design Program. Front-End Developer. Aspiring Coder. Music Avid</h4>
+</section>
+
+<section id="contactSection" data-role="page" class="inactive">
+	<h1 id="contactTitle"> Contact</h1>
+	<br />
+	<h4 class="lead">Email</h4>
+	<br />
+	<h4 class="lead">Instagram</h4>
+	<br />
+	<h4 class="lead">SoundCloud</h4>
+	<br />
+	<h4 class="lead">Spotify</h4>
+
+</section>
+<script src="main.js"></script>

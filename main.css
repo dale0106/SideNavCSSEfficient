@@ -1,0 +1,107 @@
+body {
+	//background-color: #447CE8;
+	background-color: #8E68F0;
+	//background-color: #FFD66B;
+}
+
+#aboutSection {
+	background-color: #FA6B66;
+	overflow: scroll;
+}
+
+#contactSection {
+	background-color: #9AFA66;
+}
+
+[data-role="page"] {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	transform: translate3d(100%, 0, 0);
+	transition: margin-left .5s;
+	padding: 16px;
+	//     Moving all pages to the side by default
+}
+
+img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#imgBox {
+	display: block;
+	height: 50vh;
+	width: 90%;
+	background-color: transparent;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+span {
+	padding: 10px;
+}
+
+.active {
+	animation: moveIn .5s ease-in-out;
+	transform: translate3d(0, 0, 0);
+	// When a link gets clicked it sets the current date-role page with this class
+}
+
+.inactive {
+	transform: translate3d(100%, 0, 0);
+	animation: moveOut 5s ease-in-out;
+}
+
+#mainSection {
+	background-color: #FFD66B;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #447CE8;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #FAFFB5;
+	display: block;
+	transition: 0.3s
+}
+
+a:hover {
+	color: #f1f1f1;
+}
+
+.closebtn {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
